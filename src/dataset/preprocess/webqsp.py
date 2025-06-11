@@ -39,7 +39,7 @@ def step_one():
 
         nodes.to_csv(f'{path_nodes}/{i}.csv', index=False)
         edges.to_csv(f'{path_edges}/{i}.csv', index=False)
-
+        torch.cuda.empty_cache()  # Add this line
 
 def generate_split():
 
