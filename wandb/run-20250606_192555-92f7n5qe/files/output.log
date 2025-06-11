@@ -1,0 +1,52 @@
+Namespace(model_name='graph_llm', project='project_g_retriever', seed=0, dataset='scene_graphs', lr=1e-05, wd=0.05, patience=2, batch_size=8, grad_steps=2, num_epochs=10, warmup_epochs=1, eval_batch_size=16, llm_model_name='7b', llm_model_path='', llm_frozen='True', llm_num_virtual_tokens=10, output_dir='output', max_txt_len=512, max_new_tokens=32, max_memory=[40], gnn_model_name='gt2', gnn_num_layers=4, gnn_in_dim=1024, gnn_hidden_dim=1024, gnn_num_heads=4, gnn_dropout=0.0)
+Loading LLAMA
+Loading checkpoint shards: 100%|█████████████| 2/2 [00:01<00:00,  1.51it/s]
+Freezing LLAMA!
+Finish loading LLAMA!
+trainable params: 90236928 || all params: 6828652544 || trainable%: 1.3214455914774392
+  0%|                                            | 0/74970 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "/home/naeem/Documents/corentin/git/Internship4rd/2/G-retriever Model/Efficient-G-Retriever-main Hybrid/train.py", line 147, in <module>
+    main(args)
+  File "/home/naeem/Documents/corentin/git/Internship4rd/2/G-retriever Model/Efficient-G-Retriever-main Hybrid/train.py", line 73, in main
+    loss = model(batch)
+  File "/home/naeem/miniconda3/envs/g_retriever_HYBRID/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/naeem/miniconda3/envs/g_retriever_HYBRID/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/naeem/Documents/corentin/git/Internship4rd/2/G-retriever Model/Efficient-G-Retriever-main Hybrid/src/model/graph_llm.py", line 240, in forward
+    outputs = self.model(
+  File "/home/naeem/miniconda3/envs/g_retriever_HYBRID/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/naeem/miniconda3/envs/g_retriever_HYBRID/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/naeem/miniconda3/envs/g_retriever_HYBRID/lib/python3.9/site-packages/transformers/utils/generic.py", line 969, in wrapper
+    output = func(self, *args, **kwargs)
+  File "/home/naeem/miniconda3/envs/g_retriever_HYBRID/lib/python3.9/site-packages/transformers/models/llama/modeling_llama.py", line 688, in forward
+    outputs: BaseModelOutputWithPast = self.model(
+  File "/home/naeem/miniconda3/envs/g_retriever_HYBRID/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/naeem/miniconda3/envs/g_retriever_HYBRID/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/naeem/miniconda3/envs/g_retriever_HYBRID/lib/python3.9/site-packages/transformers/utils/generic.py", line 969, in wrapper
+    output = func(self, *args, **kwargs)
+  File "/home/naeem/miniconda3/envs/g_retriever_HYBRID/lib/python3.9/site-packages/transformers/models/llama/modeling_llama.py", line 453, in forward
+    layer_outputs = decoder_layer(
+  File "/home/naeem/miniconda3/envs/g_retriever_HYBRID/lib/python3.9/site-packages/transformers/modeling_layers.py", line 48, in __call__
+    return super().__call__(*args, **kwargs)
+  File "/home/naeem/miniconda3/envs/g_retriever_HYBRID/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/naeem/miniconda3/envs/g_retriever_HYBRID/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/naeem/miniconda3/envs/g_retriever_HYBRID/lib/python3.9/site-packages/transformers/models/llama/modeling_llama.py", line 308, in forward
+    hidden_states, self_attn_weights = self.self_attn(
+  File "/home/naeem/miniconda3/envs/g_retriever_HYBRID/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/naeem/miniconda3/envs/g_retriever_HYBRID/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/naeem/miniconda3/envs/g_retriever_HYBRID/lib/python3.9/site-packages/transformers/models/llama/modeling_llama.py", line 265, in forward
+    attn_output, attn_weights = attention_interface(
+  File "/home/naeem/miniconda3/envs/g_retriever_HYBRID/lib/python3.9/site-packages/transformers/models/llama/modeling_llama.py", line 196, in eager_attention_forward
+    attn_weights = nn.functional.softmax(attn_weights, dim=-1, dtype=torch.float32).to(query.dtype)
+  File "/home/naeem/miniconda3/envs/g_retriever_HYBRID/lib/python3.9/site-packages/torch/nn/functional.py", line 1858, in softmax
+    ret = input.softmax(dim, dtype=dtype)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 296.00 MiB. GPU 0 has a total capacty of 47.52 GiB of which 273.31 MiB is free. Including non-PyTorch memory, this process has 46.87 GiB memory in use. Of the allocated memory 44.82 GiB is allocated by PyTorch, and 1.74 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF

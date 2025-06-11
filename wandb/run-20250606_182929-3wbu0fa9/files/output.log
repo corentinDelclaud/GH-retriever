@@ -1,0 +1,53 @@
+Namespace(model_name='pt_llm', project='project_g_retriever', seed=0, dataset='expla_graphs', lr=1e-05, wd=0.05, patience=2, batch_size=8, grad_steps=2, num_epochs=10, warmup_epochs=1, eval_batch_size=16, llm_model_name='7b', llm_model_path='', llm_frozen='True', llm_num_virtual_tokens=10, output_dir='output', max_txt_len=512, max_new_tokens=32, max_memory=[40], gnn_model_name='gt2', gnn_num_layers=4, gnn_in_dim=1024, gnn_hidden_dim=1024, gnn_num_heads=4, gnn_dropout=0.0)
+Loading LLAMA
+Loading checkpoint shards: 100%|█████████████| 2/2 [00:01<00:00,  1.49it/s]
+Freezing LLAMA!
+Finish loading LLAMA!
+trainable params: 40960 || all params: 6738456576 || trainable%: 0.0006078543289257816
+ 90%|██████████████████████████████▌   | 1863/2070 [33:29<03:18,  1.04it/s]
+Epoch: 0|10: Train Loss (Epoch Mean): 2.7618359747716195
+Epoch: 0|10: Val Loss: 2.221493399143219
+Saving checkpoint at epoch 0 to output/expla_graphs/model_name_pt_llm_llm_model_name_7b_llm_frozen_True_max_txt_len_512_max_new_tokens_32_gnn_model_name_gt2_patience_2_num_epochs_10_seed0_checkpoint_best.pth.
+Epoch 0 Val Loss 2.221493399143219 Best Val Loss 2.221493399143219 Best Epoch 0
+Epoch: 1|10: Train Loss (Epoch Mean): 1.4194243795053971
+Epoch: 1|10: Val Loss: 0.8421873841966901
+Saving checkpoint at epoch 1 to output/expla_graphs/model_name_pt_llm_llm_model_name_7b_llm_frozen_True_max_txt_len_512_max_new_tokens_32_gnn_model_name_gt2_patience_2_num_epochs_10_seed0_checkpoint_best.pth.
+Epoch 1 Val Loss 0.8421873841966901 Best Val Loss 0.8421873841966901 Best Epoch 1
+Epoch: 2|10: Train Loss (Epoch Mean): 0.5545452533712709
+Epoch: 2|10: Val Loss: 0.46034382326262335
+Saving checkpoint at epoch 2 to output/expla_graphs/model_name_pt_llm_llm_model_name_7b_llm_frozen_True_max_txt_len_512_max_new_tokens_32_gnn_model_name_gt2_patience_2_num_epochs_10_seed0_checkpoint_best.pth.
+Epoch 2 Val Loss 0.46034382326262335 Best Val Loss 0.46034382326262335 Best Epoch 2
+Epoch: 3|10: Train Loss (Epoch Mean): 0.3759488654885315
+Epoch: 3|10: Val Loss: 0.40759012230804986
+Saving checkpoint at epoch 3 to output/expla_graphs/model_name_pt_llm_llm_model_name_7b_llm_frozen_True_max_txt_len_512_max_new_tokens_32_gnn_model_name_gt2_patience_2_num_epochs_10_seed0_checkpoint_best.pth.
+Epoch 3 Val Loss 0.40759012230804986 Best Val Loss 0.40759012230804986 Best Epoch 3
+Epoch: 4|10: Train Loss (Epoch Mean): 0.34643629214901855
+Epoch: 4|10: Val Loss: 0.3971390779529299
+Saving checkpoint at epoch 4 to output/expla_graphs/model_name_pt_llm_llm_model_name_7b_llm_frozen_True_max_txt_len_512_max_new_tokens_32_gnn_model_name_gt2_patience_2_num_epochs_10_seed0_checkpoint_best.pth.
+Epoch 4 Val Loss 0.3971390779529299 Best Val Loss 0.3971390779529299 Best Epoch 4
+Epoch: 5|10: Train Loss (Epoch Mean): 0.33390536522807707
+Epoch: 5|10: Val Loss: 0.3863234592335565
+Saving checkpoint at epoch 5 to output/expla_graphs/model_name_pt_llm_llm_model_name_7b_llm_frozen_True_max_txt_len_512_max_new_tokens_32_gnn_model_name_gt2_patience_2_num_epochs_10_seed0_checkpoint_best.pth.
+Epoch 5 Val Loss 0.3863234592335565 Best Val Loss 0.3863234592335565 Best Epoch 5
+Epoch: 6|10: Train Loss (Epoch Mean): 0.32568877985799943
+Epoch: 6|10: Val Loss: 0.3864505527274949
+Epoch 6 Val Loss 0.3864505527274949 Best Val Loss 0.3863234592335565 Best Epoch 5
+Epoch: 7|10: Train Loss (Epoch Mean): 0.319560871751988
+Epoch: 7|10: Val Loss: 0.372837991799627
+Saving checkpoint at epoch 7 to output/expla_graphs/model_name_pt_llm_llm_model_name_7b_llm_frozen_True_max_txt_len_512_max_new_tokens_32_gnn_model_name_gt2_patience_2_num_epochs_10_seed0_checkpoint_best.pth.
+Epoch 7 Val Loss 0.372837991799627 Best Val Loss 0.372837991799627 Best Epoch 7
+Epoch: 8|10: Train Loss (Epoch Mean): 0.3136018280677749
+Epoch: 8|10: Val Loss: 0.36517026935304914
+Saving checkpoint at epoch 8 to output/expla_graphs/model_name_pt_llm_llm_model_name_7b_llm_frozen_True_max_txt_len_512_max_new_tokens_32_gnn_model_name_gt2_patience_2_num_epochs_10_seed0_checkpoint_best.pth.
+Epoch 8 Val Loss 0.36517026935304914 Best Val Loss 0.36517026935304914 Best Epoch 8
+Epoch: 9|10: Train Loss (Epoch Mean): 0.3095902976926398
+Epoch: 9|10: Val Loss: 0.3652589725596564
+Epoch 9 Val Loss 0.3652589725596564 Best Val Loss 0.36517026935304914 Best Epoch 8
+  warnings.warn(
+path: output/expla_graphs/model_name_pt_llm_llm_model_name_7b_llm_frozen_True_max_txt_len_512_max_new_tokens_32_gnn_model_name_gt2_patience_2_num_epochs_10_seed0.csv
+Loading checkpoint from output/expla_graphs/model_name_pt_llm_llm_model_name_7b_llm_frozen_True_max_txt_len_512_max_new_tokens_32_gnn_model_name_gt2_patience_2_num_epochs_10_seed0_checkpoint_best.pth.
+100%|██████████████████████████████████| 2070/2070 [38:32<00:00,  1.12s/it]
+100%|██████████████████████████████████████| 35/35 [00:46<00:00,  1.32s/it]
+Test Acc 0.575812274368231
+/home/naeem/miniconda3/envs/g_retriever_HYBRID/lib/python3.9/site-packages/torch/cuda/memory.py:329: FutureWarning: torch.cuda.reset_max_memory_allocated now calls torch.cuda.reset_peak_memory_stats, which resets /all/ peak memory stats.
+  warnings.warn(

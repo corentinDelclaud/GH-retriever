@@ -1,0 +1,15 @@
+Namespace(model_name='graph_llm', project='project_g_retriever', seed=3, dataset='scene_graphs', lr=1e-05, wd=0.05, patience=2, batch_size=4, grad_steps=2, num_epochs=10, warmup_epochs=1, eval_batch_size=16, llm_model_name='7b', llm_model_path='', llm_frozen='False', llm_num_virtual_tokens=10, output_dir='output', max_txt_len=512, max_new_tokens=32, max_memory=[40], gnn_model_name='gt2', gnn_num_layers=4, gnn_in_dim=1024, gnn_hidden_dim=1024, gnn_num_heads=4, gnn_dropout=0.0)
+Loading LLAMA
+Loading checkpoint shards: 100%|█████████████| 2/2 [00:01<00:00,  1.49it/s]
+Training LLAMA with LORA!
+Finish loading LLAMA!
+trainable params: 94431232 || all params: 6832846848 || trainable%: 1.382018858327556
+  0%|                                           | 0/149940 [00:00<?, ?it/s]`use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`.
+ 10%|██▌                       | 14994/149940 [5:52:03<54:01:05,  1.44s/it]Traceback (most recent call last):
+Epoch: 0|10: Train Loss (Epoch Mean): 0.5570520505236001
+Epoch: 0|10: Val Loss: nan
+  File "/home/naeem/Documents/corentin/git/Internship4rd/2/G-retriever Model/Efficient-G-Retriever-main Hybrid/train.py", line 147, in <module>
+    main(args)
+  File "/home/naeem/Documents/corentin/git/Internship4rd/2/G-retriever Model/Efficient-G-Retriever-main Hybrid/train.py", line 111, in main
+    print(f'Epoch {epoch} Val Loss {val_loss} Best Val Loss {best_val_loss} Best Epoch {best_epoch}')
+UnboundLocalError: local variable 'best_epoch' referenced before assignment

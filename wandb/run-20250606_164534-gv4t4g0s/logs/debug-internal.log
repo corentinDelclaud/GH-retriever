@@ -1,0 +1,16 @@
+{"time":"2025-06-06T16:45:34.295573139+02:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/naeem/Documents/corentin/git/Internship4rd/2/G-retriever Model/Efficient-G-Retriever-main Hybrid/wandb/run-20250606_164534-gv4t4g0s/logs/debug-core.log"}
+{"time":"2025-06-06T16:45:34.681755953+02:00","level":"INFO","msg":"stream: created new stream","id":"gv4t4g0s"}
+{"time":"2025-06-06T16:45:34.681792758+02:00","level":"INFO","msg":"stream: started","id":"gv4t4g0s"}
+{"time":"2025-06-06T16:45:34.681798523+02:00","level":"INFO","msg":"sender: started","stream_id":"gv4t4g0s"}
+{"time":"2025-06-06T16:45:34.68179836+02:00","level":"INFO","msg":"handler: started","stream_id":"gv4t4g0s"}
+{"time":"2025-06-06T16:45:34.68181428+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"gv4t4g0s"}
+{"time":"2025-06-06T16:45:34.998933927+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-06T17:26:26.232951278+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/corentin-delclaud-university-of-southern-denmark/project_g_retriever/gv4t4g0s/file_stream\": dial tcp: lookup api.wandb.ai on 127.0.0.53:53: server misbehaving"}
+{"time":"2025-06-06T18:29:25.123112044+02:00","level":"INFO","msg":"stream: closing","id":"gv4t4g0s"}
+{"time":"2025-06-06T18:29:25.123166285+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-06T18:29:25.123295394+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-06T18:29:26.348920902+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-06T18:29:26.656351809+02:00","level":"INFO","msg":"handler: closed","stream_id":"gv4t4g0s"}
+{"time":"2025-06-06T18:29:26.656388255+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"gv4t4g0s"}
+{"time":"2025-06-06T18:29:26.65642985+02:00","level":"INFO","msg":"sender: closed","stream_id":"gv4t4g0s"}
+{"time":"2025-06-06T18:29:26.65646667+02:00","level":"INFO","msg":"stream: closed","id":"gv4t4g0s"}

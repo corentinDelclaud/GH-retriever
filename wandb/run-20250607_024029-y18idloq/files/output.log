@@ -1,0 +1,10 @@
+Namespace(model_name='inference_llm', project='project_g_retriever', seed=1, dataset='expla_graphs', lr=1e-05, wd=0.05, patience=2, batch_size=8, grad_steps=2, num_epochs=10, warmup_epochs=1, eval_batch_size=16, llm_model_name='7b_chat', llm_model_path='', llm_frozen='True', llm_num_virtual_tokens=10, output_dir='output', max_txt_len=0, max_new_tokens=32, max_memory=[40], gnn_model_name='gt2', gnn_num_layers=4, gnn_in_dim=1024, gnn_hidden_dim=1024, gnn_num_heads=4, gnn_dropout=0.0)
+Loading LLAMA
+Loading checkpoint shards: 100%|█████████████| 2/2 [00:01<00:00,  1.49it/s]
+Freezing LLAMA!
+Finish loading LLAMA!
+path: output/expla_graphs/model_name_inference_llm_llm_model_name_7b_chat_llm_frozen_True_max_txt_len_0_max_new_tokens_32_gnn_model_name_gt2_patience_2_num_epochs_10_seed1.csv
+100%|██████████████████████████████████████| 35/35 [01:34<00:00,  2.70s/it]
+Test Acc 0.6299638989169675
+/home/naeem/miniconda3/envs/g_retriever_HYBRID/lib/python3.9/site-packages/torch/cuda/memory.py:329: FutureWarning: torch.cuda.reset_max_memory_allocated now calls torch.cuda.reset_peak_memory_stats, which resets /all/ peak memory stats.
+  warnings.warn(

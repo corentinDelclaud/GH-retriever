@@ -1,0 +1,15 @@
+{"time":"2025-06-10T16:48:52.393817893+02:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/naeem/Documents/corentin/git/Internship4rd/2/G-retriever Model/Efficient-G-Retriever-main Hybrid/wandb/run-20250610_164852-kmrej2xr/logs/debug-core.log"}
+{"time":"2025-06-10T16:48:52.723342166+02:00","level":"INFO","msg":"stream: created new stream","id":"kmrej2xr"}
+{"time":"2025-06-10T16:48:52.723357742+02:00","level":"INFO","msg":"stream: started","id":"kmrej2xr"}
+{"time":"2025-06-10T16:48:52.72340334+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"kmrej2xr"}
+{"time":"2025-06-10T16:48:52.723475213+02:00","level":"INFO","msg":"handler: started","stream_id":"kmrej2xr"}
+{"time":"2025-06-10T16:48:52.723480567+02:00","level":"INFO","msg":"sender: started","stream_id":"kmrej2xr"}
+{"time":"2025-06-10T16:48:53.087333902+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-10T17:00:33.137338318+02:00","level":"INFO","msg":"stream: closing","id":"kmrej2xr"}
+{"time":"2025-06-10T17:00:33.13735512+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-10T17:00:33.13736884+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-10T17:00:34.320569001+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-10T17:00:34.627604897+02:00","level":"INFO","msg":"handler: closed","stream_id":"kmrej2xr"}
+{"time":"2025-06-10T17:00:34.62762087+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"kmrej2xr"}
+{"time":"2025-06-10T17:00:34.62762818+02:00","level":"INFO","msg":"sender: closed","stream_id":"kmrej2xr"}
+{"time":"2025-06-10T17:00:34.627688073+02:00","level":"INFO","msg":"stream: closed","id":"kmrej2xr"}

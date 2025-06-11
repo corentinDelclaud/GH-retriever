@@ -1,0 +1,38 @@
+Namespace(model_name='graph_llm', project='project_g_retriever', seed=1, dataset='expla_graphs', lr=1e-05, wd=0.05, patience=2, batch_size=8, grad_steps=2, num_epochs=10, warmup_epochs=1, eval_batch_size=16, llm_model_name='7b', llm_model_path='', llm_frozen='True', llm_num_virtual_tokens=10, output_dir='output', max_txt_len=512, max_new_tokens=32, max_memory=[40], gnn_model_name='gt2', gnn_num_layers=4, gnn_in_dim=1024, gnn_hidden_dim=1024, gnn_num_heads=4, gnn_dropout=0.0)
+Loading LLAMA
+Loading checkpoint shards: 100%|█████████████| 2/2 [00:01<00:00,  1.49it/s]
+Freezing LLAMA!
+Finish loading LLAMA!
+trainable params: 90236928 || all params: 6828652544 || trainable%: 1.3214455914774392
+ 60%|████████████████████▍             | 1242/2070 [16:16<09:26,  1.46it/s]/home/naeem/miniconda3/envs/g_retriever_HYBRID/lib/python3.9/site-packages/torch/cuda/memory.py:329: FutureWarning: torch.cuda.reset_max_memory_allocated now calls torch.cuda.reset_peak_memory_stats, which resets /all/ peak memory stats.
+Epoch: 0|10: Train Loss (Epoch Mean): 0.9117972905509137
+Epoch: 0|10: Val Loss: 0.40460094873394287
+Saving checkpoint at epoch 0 to output/expla_graphs/model_name_graph_llm_llm_model_name_7b_llm_frozen_True_max_txt_len_512_max_new_tokens_32_gnn_model_name_gt2_patience_2_num_epochs_10_seed1_checkpoint_best.pth.
+Epoch 0 Val Loss 0.40460094873394287 Best Val Loss 0.40460094873394287 Best Epoch 0
+Epoch: 1|10: Train Loss (Epoch Mean): 0.3195962081550832
+Epoch: 1|10: Val Loss: 0.3137242001082216
+Saving checkpoint at epoch 1 to output/expla_graphs/model_name_graph_llm_llm_model_name_7b_llm_frozen_True_max_txt_len_512_max_new_tokens_32_gnn_model_name_gt2_patience_2_num_epochs_10_seed1_checkpoint_best.pth.
+Epoch 1 Val Loss 0.3137242001082216 Best Val Loss 0.3137242001082216 Best Epoch 1
+Epoch: 2|10: Train Loss (Epoch Mean): 0.18122435405646262
+Epoch: 2|10: Val Loss: 0.24931207689431695
+Saving checkpoint at epoch 2 to output/expla_graphs/model_name_graph_llm_llm_model_name_7b_llm_frozen_True_max_txt_len_512_max_new_tokens_32_gnn_model_name_gt2_patience_2_num_epochs_10_seed1_checkpoint_best.pth.
+Epoch 2 Val Loss 0.24931207689431695 Best Val Loss 0.24931207689431695 Best Epoch 2
+Epoch: 3|10: Train Loss (Epoch Mean): 0.16725484590352752
+Epoch: 3|10: Val Loss: 0.19631684611493774
+Saving checkpoint at epoch 3 to output/expla_graphs/model_name_graph_llm_llm_model_name_7b_llm_frozen_True_max_txt_len_512_max_new_tokens_32_gnn_model_name_gt2_patience_2_num_epochs_10_seed1_checkpoint_best.pth.
+Epoch 3 Val Loss 0.19631684611493774 Best Val Loss 0.19631684611493774 Best Epoch 3
+Epoch: 4|10: Train Loss (Epoch Mean): 0.13423060453148367
+Epoch: 4|10: Val Loss: 0.2699971747841378
+Epoch 4 Val Loss 0.2699971747841378 Best Val Loss 0.19631684611493774 Best Epoch 3
+Epoch: 5|10: Train Loss (Epoch Mean): 0.09316938643736218
+Epoch: 5|10: Val Loss: 0.2901613180791953
+Epoch 5 Val Loss 0.2901613180791953 Best Val Loss 0.19631684611493774 Best Epoch 3
+Early stop at epoch 5
+  warnings.warn(
+path: output/expla_graphs/model_name_graph_llm_llm_model_name_7b_llm_frozen_True_max_txt_len_512_max_new_tokens_32_gnn_model_name_gt2_patience_2_num_epochs_10_seed1.csv
+Loading checkpoint from output/expla_graphs/model_name_graph_llm_llm_model_name_7b_llm_frozen_True_max_txt_len_512_max_new_tokens_32_gnn_model_name_gt2_patience_2_num_epochs_10_seed1_checkpoint_best.pth.
+ 60%|████████████████████▍             | 1242/2070 [17:04<11:22,  1.21it/s]
+100%|██████████████████████████████████████| 35/35 [00:24<00:00,  1.44it/s]
+Test Acc 0.9007220216606499
+/home/naeem/miniconda3/envs/g_retriever_HYBRID/lib/python3.9/site-packages/torch/cuda/memory.py:329: FutureWarning: torch.cuda.reset_max_memory_allocated now calls torch.cuda.reset_peak_memory_stats, which resets /all/ peak memory stats.
+  warnings.warn(

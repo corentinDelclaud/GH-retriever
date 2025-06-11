@@ -1,0 +1,46 @@
+Namespace(model_name='graph_llm', project='project_g_retriever', seed=3, dataset='expla_graphs', lr=1e-05, wd=0.05, patience=2, batch_size=4, grad_steps=2, num_epochs=10, warmup_epochs=1, eval_batch_size=16, llm_model_name='7b', llm_model_path='', llm_frozen='False', llm_num_virtual_tokens=10, output_dir='output', max_txt_len=512, max_new_tokens=32, max_memory=[40], gnn_model_name='gt2', gnn_num_layers=4, gnn_in_dim=1024, gnn_hidden_dim=1024, gnn_num_heads=4, gnn_dropout=0.0)
+Loading LLAMA
+Loading checkpoint shards: 100%|████████████| 2/2 [00:01<00:00,  1.50it/s]
+Training LLAMA with LORA!
+Finish loading LLAMA!
+trainable params: 94431232 || all params: 6832846848 || trainable%: 1.382018858327556
+  0%|                                            | 0/4140 [00:00<?, ?it/s]`use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`.
+ 70%|███████████████████████          | 2898/4140 [33:33<13:11,  1.57it/s]/home/naeem/miniconda3/envs/g_retriever_HYBRID/lib/python3.9/site-packages/torch/cuda/memory.py:329: FutureWarning: torch.cuda.reset_max_memory_allocated now calls torch.cuda.reset_peak_memory_stats, which resets /all/ peak memory stats.
+Epoch: 0|10: Train Loss (Epoch Mean): 0.8020003545975339
+Epoch: 0|10: Val Loss: 0.3873623747298186
+Saving checkpoint at epoch 0 to output/expla_graphs/model_name_graph_llm_llm_model_name_7b_llm_frozen_False_max_txt_len_512_max_new_tokens_32_gnn_model_name_gt2_patience_2_num_epochs_10_seed3_checkpoint_best.pth.
+Epoch 0 Val Loss 0.3873623747298186 Best Val Loss 0.3873623747298186 Best Epoch 0
+Epoch: 1|10: Train Loss (Epoch Mean): 0.31564895648707403
+Epoch: 1|10: Val Loss: 0.6646608843247607
+Epoch 1 Val Loss 0.6646608843247607 Best Val Loss 0.3873623747298186 Best Epoch 0
+Epoch: 2|10: Train Loss (Epoch Mean): 0.26510864725808964
+Epoch: 2|10: Val Loss: 0.3006570682196888
+Saving checkpoint at epoch 2 to output/expla_graphs/model_name_graph_llm_llm_model_name_7b_llm_frozen_False_max_txt_len_512_max_new_tokens_32_gnn_model_name_gt2_patience_2_num_epochs_10_seed3_checkpoint_best.pth.
+Epoch 2 Val Loss 0.3006570682196888 Best Val Loss 0.3006570682196888 Best Epoch 2
+Epoch: 3|10: Train Loss (Epoch Mean): 0.18204605023458129
+Epoch: 3|10: Val Loss: 0.3340864110623868
+Epoch 3 Val Loss 0.3340864110623868 Best Val Loss 0.3006570682196888 Best Epoch 2
+Epoch: 4|10: Train Loss (Epoch Mean): 0.12906669123097855
+Epoch: 4|10: Val Loss: 0.2753522846566261
+Saving checkpoint at epoch 4 to output/expla_graphs/model_name_graph_llm_llm_model_name_7b_llm_frozen_False_max_txt_len_512_max_new_tokens_32_gnn_model_name_gt2_patience_2_num_epochs_10_seed3_checkpoint_best.pth.
+Epoch 4 Val Loss 0.2753522846566261 Best Val Loss 0.2753522846566261 Best Epoch 4
+Epoch: 5|10: Train Loss (Epoch Mean): 0.07428794449988005
+Epoch: 5|10: Val Loss: 0.35937794428128195
+Epoch 5 Val Loss 0.35937794428128195 Best Val Loss 0.2753522846566261 Best Epoch 4
+Epoch: 6|10: Train Loss (Epoch Mean): 0.06296884395469853
+Epoch: 6|10: Val Loss: 0.3057963780545194
+Epoch 6 Val Loss 0.3057963780545194 Best Val Loss 0.2753522846566261 Best Epoch 4
+Early stop at epoch 6
+  warnings.warn(
+path: output/expla_graphs/model_name_graph_llm_llm_model_name_7b_llm_frozen_False_max_txt_len_512_max_new_tokens_32_gnn_model_name_gt2_patience_2_num_epochs_10_seed3.csv
+Loading checkpoint from output/expla_graphs/model_name_graph_llm_llm_model_name_7b_llm_frozen_False_max_txt_len_512_max_new_tokens_32_gnn_model_name_gt2_patience_2_num_epochs_10_seed3_checkpoint_best.pth.
+ 70%|███████████████████████          | 2898/4140 [34:29<14:46,  1.40it/s]
+100%|█████████████████████████████████████| 35/35 [00:26<00:00,  1.33it/s]
+Accuracy: 0.9188
+Precision: 0.9188
+Recall: 0.9188
+Test Accuracy: 0.9187725631768953
+Test Precision: 0.9187725631768953
+Test Recall: 0.9187725631768953
+/home/naeem/miniconda3/envs/g_retriever_HYBRID/lib/python3.9/site-packages/torch/cuda/memory.py:329: FutureWarning: torch.cuda.reset_max_memory_allocated now calls torch.cuda.reset_peak_memory_stats, which resets /all/ peak memory stats.
+  warnings.warn(

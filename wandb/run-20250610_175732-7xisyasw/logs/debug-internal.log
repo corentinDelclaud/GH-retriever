@@ -1,0 +1,16 @@
+{"time":"2025-06-10T17:57:32.890243467+02:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/naeem/Documents/corentin/git/Internship4rd/2/G-retriever Model/Efficient-G-Retriever-main Hybrid/wandb/run-20250610_175732-7xisyasw/logs/debug-core.log"}
+{"time":"2025-06-10T17:57:33.249319658+02:00","level":"INFO","msg":"stream: created new stream","id":"7xisyasw"}
+{"time":"2025-06-10T17:57:33.249349383+02:00","level":"INFO","msg":"stream: started","id":"7xisyasw"}
+{"time":"2025-06-10T17:57:33.249422746+02:00","level":"INFO","msg":"writer: Do: started","stream_id":"7xisyasw"}
+{"time":"2025-06-10T17:57:33.249428717+02:00","level":"INFO","msg":"sender: started","stream_id":"7xisyasw"}
+{"time":"2025-06-10T17:57:33.249449337+02:00","level":"INFO","msg":"handler: started","stream_id":"7xisyasw"}
+{"time":"2025-06-10T17:57:33.535567855+02:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-10T18:03:39.705889218+02:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/corentin-delclaud-university-of-southern-denmark/project_g_retriever/7xisyasw/file_stream\": dial tcp: lookup api.wandb.ai on 127.0.0.53:53: server misbehaving"}
+{"time":"2025-06-10T18:14:46.584506012+02:00","level":"INFO","msg":"stream: closing","id":"7xisyasw"}
+{"time":"2025-06-10T18:14:46.584523385+02:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-10T18:14:46.584571512+02:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-10T18:14:47.794233099+02:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-10T18:14:48.100748379+02:00","level":"INFO","msg":"handler: closed","stream_id":"7xisyasw"}
+{"time":"2025-06-10T18:14:48.100757901+02:00","level":"INFO","msg":"writer: Close: closed","stream_id":"7xisyasw"}
+{"time":"2025-06-10T18:14:48.100783508+02:00","level":"INFO","msg":"sender: closed","stream_id":"7xisyasw"}
+{"time":"2025-06-10T18:14:48.10078635+02:00","level":"INFO","msg":"stream: closed","id":"7xisyasw"}

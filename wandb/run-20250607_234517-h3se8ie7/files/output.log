@@ -1,0 +1,15 @@
+Namespace(model_name='pt_llm', project='project_g_retriever', seed=3, dataset='scene_graphs', lr=1e-05, wd=0.05, patience=2, batch_size=8, grad_steps=2, num_epochs=10, warmup_epochs=1, eval_batch_size=16, llm_model_name='7b', llm_model_path='', llm_frozen='True', llm_num_virtual_tokens=10, output_dir='output', max_txt_len=512, max_new_tokens=32, max_memory=[40], gnn_model_name='gt2', gnn_num_layers=4, gnn_in_dim=1024, gnn_hidden_dim=1024, gnn_num_heads=4, gnn_dropout=0.0)
+Loading LLAMA
+Loading checkpoint shards: 100%|█████████████| 2/2 [00:01<00:00,  1.48it/s]
+Freezing LLAMA!
+Finish loading LLAMA!
+Traceback (most recent call last):
+  File "/home/naeem/Documents/corentin/git/Internship4rd/2/G-retriever Model/Efficient-G-Retriever-main Hybrid/train.py", line 147, in <module>
+    main(args)
+  File "/home/naeem/Documents/corentin/git/Internship4rd/2/G-retriever Model/Efficient-G-Retriever-main Hybrid/train.py", line 49, in main
+    model = load_model[args.model_name](graph_type=dataset.graph_type, args=args, init_prompt=dataset.prompt)
+  File "/home/naeem/Documents/corentin/git/Internship4rd/2/G-retriever Model/Efficient-G-Retriever-main Hybrid/src/model/pt_llm.py", line 83, in __init__
+    init_token_ids = self.tokenizer(text=init_prompt).input_ids
+  File "/home/naeem/miniconda3/envs/g_retriever_HYBRID/lib/python3.9/site-packages/transformers/tokenization_utils_base.py", line 2861, in __call__
+    raise ValueError("You need to specify either `text` or `text_target`.")
+ValueError: You need to specify either `text` or `text_target`.
